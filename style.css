@@ -46,7 +46,7 @@
     
     height: auto;
     margin-bottom: 0px;
-     background-image: linear-gradient(90deg, rgb(18, 16, 49),rgb(0, 0, 0));
+    background-image: linear-gradient(90deg, rgb(18, 16, 49),rgb(0, 0, 0));
     padding: 10px 5px;
 }
 .wrapper-container   .home-wrapper{
@@ -223,10 +223,10 @@
 }
 .wrapper-container .text-wrapper .inner-text{
  font-size: 1.3rem;
-   font-family: 'Times New Roman', Times, serif;
+   font-family: poppins, sans-serif;
 
    color: rgb(255, 255, 255);
-   font-weight: lighter;
+   font-weight: 500;
    padding: 20px;
    text-align: center;
    line-height: 25px;
@@ -606,16 +606,16 @@ margin: 0;
  }
 
  .text-m{
-  font-size: 21PX;
+  font-size: 18px;
   font-weight: 500;
  }
  .job-post{
     font-size: 18px;
  }
   .hire-me button{
-    width: 100%;
-    font-size: 12px;
-    font-weight: 200;
+    width: fit-content;
+    font-size: 10px;
+    font-weight: 500;
     
  }
  .hire-me{
