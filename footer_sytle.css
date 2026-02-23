@@ -1,0 +1,106 @@
+
+footer{
+    background: linear-gradient(rgb(0, 0, 0),rgb(28, 32, 36));
+    color: rgb(159, 2, 232);
+    width: 100%;
+    margin-top: 5vh;
+    height: auto;
+}
+.footer-container{
+    padding: 5px 5px 2px 5px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 5px;
+}
+.footer-container .wrapper-contact{
+    display: flex;
+    flex-direction:row ;
+    width: 100%;
+    gap: 5%;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.footer-container .wrapper-contact .title{
+    color: rgb(234, 234, 244);
+    text-transform: uppercase;
+    border-left: rgb(171, 171, 243) 4px solid;
+    padding-left: 3px;
+    border-radius: 2px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     
+ 
+}
+:where(.contact-items,.about-items,.feedback-items){
+    color: rgb(159, 2, 232);
+    text-transform: capitalize;
+    font-size: .8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 20px;
+    background-color: rgba(red, green, blue, 1);
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: 2px;
+    border-bottom: rgb(12, 12, 21) 1px solid;
+}
+
+.reserve-right{
+    font-size: 12px;
+    color: rgb(240, 244, 244);
+    text-transform: lowercase;
+    text-align: center;
+       opacity: 0.8;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* handling hover */
+:where(.contact-items div,.about-items div,.feedback-items div ):hover{
+    text-decoration: underline;
+}
+.footer-container .wrapper-contact .title:hover{
+    padding-bottom: 3px;
+    border-bottom: rgb(2, 2, 6) 1px solid;
+}
+.reserve-right:hover{
+    text-decoration: underline;
+    opacity: 0.8;
+    /* width: fit-content; */
+    
+}
+#fcb{
+    background-color: blue;
+    height: 15px;
+    width: 15px;
+    padding: 2px;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.icon-footer{
+    background-color: #8b8c8b;
+    padding: 5px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin-right: 4px; 
+    margin-bottom: -5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    footer{
+        border-radius: 15px 15px 0 0;
+    }
+   .footer-container .wrapper-contact{
+    display: block;
+   } 
+   .contact-items{
+    display: flex;
+    justify-content: space-evenly;
+   }
+}
