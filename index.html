@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my porforlio</title>
+    <title>porforlio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="footer_sytle.css" />
   </head>
@@ -44,11 +44,24 @@
           </div>
 
           <div class="icons">
-            <span><img src="/linkedin.svg" alt="" /></span>
-            <span><img src="/facebook.svg" alt="" /></span>
-            <span><img src="/instagram.svg" alt="" /></span>
-            <span><img src="/twitter-x.svg" alt="" /></span>
-            <span><img src="/github.svg" alt="" /></span>
+            <a
+              href="https://www.linkedin.com/in/mac-vette-binde-a082aa2a6?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              ><img src="/linkedin.svg" alt=""
+            /></a>
+            <a href="https://www.facebook.com/profile.php?id=61559424610962">
+              <img src="/facebook.svg" alt="" />
+            </a>
+
+            <a
+              href="https://www.instagram.com/macvettemv?igsh=MThhc2g2Z2htMWN0ZA=="
+              ><img src="/instagram.svg" alt=""
+            /></a>
+            <a href="https://x.com/techdreams200"
+              ><img src="/twitter-x.svg" alt=""
+            /></a>
+            <a href="https://github.com/djmacco">
+              <img src="/github.svg" alt="" />
+            </a>
           </div>
           <div class="hire-me">
             <a href="#contact">
@@ -279,20 +292,46 @@
             <p class="tel">Call us</p>
             <span class="call-c">
               <img class="telephone" src="/telephone.svg" alt="" />
-              <b>+237 688-687-369</b>
+              <b>+237 653 02 64 56</b>
             </span>
 
             <p class="tel">Message us on</p>
             <div class="mess-icon">
-              <img src="whatsapp.svg" alt="" />
-              <img src="telegram.svg" alt="" />
+              <a href="https://wa.me/237653026456">
+                <img src="whatsapp.svg" alt="" />
+              </a>
+
+              <a href="https://t.me/techdream200">
+                <img src="telegram.svg" alt="" />
+              </a>
             </div>
           </div>
           <div class="contact-input">
             <p class="tel">Contact us by email</p>
-            <input type="text" class="input-email" placeholder="email" />
-            <input class="input-subject" type="text" placeholder="name" />
-            <textarea id="message" type="text" placeholder="message"></textarea>
+            <input
+              type="text"
+              class="input-email"
+              placeholder="email"
+              name="email"
+            />
+            <input
+              class="input-name"
+              type="text"
+              placeholder="name"
+              name="name"
+            />
+            <input
+              class="input-subject"
+              type="text"
+              placeholder="subject"
+              name="subject"
+            />
+            <textarea
+              id="message"
+              name="message"
+              type="text"
+              placeholder="Tell me about your project or opportunity..."
+            ></textarea>
             <img class="send-email" src="/send.svg" alt="" />
             <span class="email-sent"></span>
           </div>
@@ -306,17 +345,28 @@
             <p class="title">Socials</p>
             <div class="contact-items">
               <div>
-                <img class="icon-footer" src="twitter-x.svg" alt="" />twitter
+                <a href="https://x.com/techdreams200">
+                  <img class="icon-footer" src="twitter-x.svg" alt="" />twitter
+                </a>
               </div>
               <div>
-                <img class="icon-footer" src="github.svg" alt="" />
+                <a href="https://github.com/Djmacco">
+                  <img class="icon-footer" src="github.svg" alt=""
+                /></a>
                 Github
               </div>
               <div>
-                <img class="icon-footer" src="linkedin.svg" alt="" />LinkedIn
+                <a
+                  href="https://www.linkedin.com/in/mac-vette-binde-a082aa2a6?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                  ><img class="icon-footer" src="linkedin.svg" alt="" /> </a
+                >LinkedIn
               </div>
               <div>
-                <img class="icon-footer" src="tiktok.svg" alt="" />Tiktok
+                <a
+                  href="https://www.tiktok.com/@techdreams1?_r=1&_t=ZN-949myiBUGVK"
+                >
+                  <img class="icon-footer" src="tiktok.svg" alt="" />Tiktok
+                </a>
               </div>
             </div>
           </span>
@@ -349,5 +399,17 @@
   <!-- typed.js -->
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <!-- main js file -->
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
+
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "MggbZOxEzWbRvrSyH",
+      });
+    })();
+  </script>
 </html>

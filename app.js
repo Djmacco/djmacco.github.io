@@ -1,18 +1,19 @@
 let input_message = document.getElementById("message"),
   input_subject = document.querySelector(".input-subject"),
   input_email = document.querySelector(".input-email"),
-  click_send = document.querySelector(".send-email");
+  click_send = document.querySelector(".send-email"),
+  input_name = document.querySelector(".input-name");
 
-const my_email = "bindemacvette@gmail.com";
 class Handle_send_email {
-  constructor(email, subject, text_message) {
+  constructor(email, subject, text_message, name) {
     this.email = email;
     this.subject = subject;
     this.text_message = text_message;
+    this.name = name;
   }
-  send_me_email() {}
 }
 
+//
 const showTextBox = () => {
   input_message.value = "you are hired";
 };
@@ -21,8 +22,10 @@ const handel_send_click = () => {
   const email = input_email.value;
   const subject = input_subject.value;
   const send_text = input_message.value;
+  const name = input_name.value;
 
-  if (email === "" || subject === "" || send_text === "") {
+  console.log(name);
+  if (email === "" || subject === "" || send_text === "" || name === "") {
     alert("please fill all the fields");
     return;
   }
@@ -30,6 +33,18 @@ const handel_send_click = () => {
   input_message.value = "";
   input_email.value = "";
   input_subject.value = "";
+  input_name.value = "";
+
+  const myinfo = new Handle_send_email(email, subject, send_text, name);
+  const data = {
+    email: myinfo.email,
+    subject: myinfo.subject,
+    message: myinfo.text_message,
+    name: myinfo.name,
+  };
+
+  emailjs.send("service_7h3xpxs", "template_hr0r00k", data);
+
   document.querySelector(".email-sent").innerHTML = "message sent succefully";
   setTimeout(() => {
     document.querySelector(".email-sent").innerHTML = "";

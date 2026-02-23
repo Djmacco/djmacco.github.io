@@ -67,7 +67,7 @@
     width: 65%;
     font-size: 1rem;
     color: rgb(255, 255, 255);
-    font-family: poppins, sans-serif;
+    font-family: 'poppins', sans-serif;
     text-align: center;
     font-weight: 600;
 }
@@ -147,11 +147,11 @@
     
 }
 
-.icons span img{
-    background-color: rgb(255, 178, 234);
+.icons a img{
+    background-color: rgb(136, 146, 255);
     border-radius: 50%;
     padding: 4px;
-    /* box-shadow: 3px 3px 3px #d5d5d5,-3px -2px 2px #ededed; */
+    box-shadow: 1px 1px 1px #120e3b;
 }
 .arrow-down{
    border: rgb(4, 0, 132) 1px solid;
@@ -223,7 +223,7 @@
 }
 .wrapper-container .text-wrapper .inner-text{
  font-size: 1.3rem;
-   font-family: poppins, sans-serif;
+   font-family: 'Poppins', sans-serif;
 
    color: rgb(255, 255, 255);
    font-weight: 500;
@@ -273,7 +273,7 @@
     border-radius: 10px;
     grid-template-columns: repeat(3,1fr);
     gap: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Inter",
 
 }
 .experience-wrapper .experience .education-wrapper{
@@ -290,14 +290,13 @@
 :where(.experience-wrapper .experience .skills-wrapper li,.experience-wrapper .experience .education-wrapper li){
     list-style: none;
     color: rgb(254, 254, 254);
-    font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
 }
 .internship-wrapper{
    background-image: linear-gradient(rgb(42, 7, 71),rgb(16, 14, 14));
     border-radius: 8px;
     padding: 0 20px;
-    font-family: 'Times New Roman', Times, serif;
+    
 
 }
 .internship-wrapper .internship{
@@ -419,6 +418,7 @@ list-style: none;
     
     justify-self: center;
     align-items: center;
+    font-family: 'Inter', sans-serif;
     
 }
 .call-c{
@@ -474,7 +474,7 @@ list-style: none;
     height: 2.4rem;
     border: none;
     padding: 0 15px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     outline: none;
     border-bottom: 2px solid rgb(255, 255, 255);
     background-color: #ffffff;
@@ -485,7 +485,7 @@ list-style: none;
     min-height: 3rem;
     border: none;
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     outline: none;
     background-color: #fff;
     resize: none;
@@ -613,7 +613,7 @@ margin: 0;
     font-size: 18px;
  }
   .hire-me button{
-    width: fit-content;
+    width: 60px;
     font-size: 10px;
     font-weight: 500;
     
