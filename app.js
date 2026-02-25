@@ -59,17 +59,13 @@ const nav_items = document.querySelector(".nav-bar .nav-items");
 
 close_nav.addEventListener("click", () => {
   nav_items.classList.remove("open-nav");
+  document.body.classList.remove("non-scrol");
 });
 open_nav.addEventListener("click", () => {
   nav_items.classList.add("open-nav");
+  document.body.classList.remove("non-scrol");
 
-  if (nav_items.classList.contains("open-nav")) {
-    document.body.style.overflow = "hidden";
-    document.body.style.height = "100vh";
-  } else {
-    document.body.style.overflow = "auto";
-    document.body.style.height = "auto";
-  }
+  document.body.classList.add("non-scrol");
 });
 
 // nav click to transform down
