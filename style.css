@@ -67,7 +67,7 @@
     width: 65%;
     font-size: 1rem;
     color: rgb(255, 255, 255);
-    font-family: 'poppins', sans-serif;
+    font-family: 'poppins';
     text-align: center;
     font-weight: 600;
 }
@@ -87,6 +87,7 @@
     text-align: center;
     width: 100%;
     font-weight: 500;
+    text-transform: capitalize;
     
     
     
@@ -118,7 +119,7 @@
 .home{
     font-size: 1.6rem;
     line-height: 30px;
-    font-family: poppins, sans-serif;
+    font-family: "Poppins";
      background:linear-gradient(to right, rgb(243, 115, 2),rgb(168, 1, 246)) ;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -223,9 +224,9 @@
 }
 .wrapper-container .text-wrapper .inner-text{
  font-size: 1.3rem;
-   font-family: 'Poppins', sans-serif;
+   font-family: 'Poppins';
 
-   color: rgb(255, 255, 255);
+   color: rgb(237, 237, 237);
    font-weight: 500;
    padding: 20px;
    text-align: center;
@@ -238,7 +239,7 @@
     gap: 8px;
 }
 .handle-btn-cv .dowload-cv{
-    background-color: rgb(128, 0, 0);
+     background-image: linear-gradient(to right,rgb(25, 103, 238),rgb(37, 16, 155)); 
     color: #fff;
     padding: 8px 12px;
     border-radius: 5px;
@@ -249,8 +250,7 @@
     letter-spacing: 0.5px;
 }
 .dw-btn{
-    background-color: rgb(128, 0, 0);
-    color: #fff;
+    background-color: rgb(242, 239, 255);
     height: 16px;
     margin-right: 5px;
     padding: 2px;
@@ -262,7 +262,7 @@
 /* experience */
 
 .experience-wrapper{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "poppins";
     color: rgb(255, 254, 254);
 }
 
@@ -308,7 +308,7 @@ list-style: none;
 }
 /* porforlio */
 .porforlio-wrapper{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "poppins";
     padding: 10px 5px;
     border-radius: 10px;
     color: #fff;
@@ -328,18 +328,20 @@ list-style: none;
 
     background-color: rgba(0, 0,0, .1);
     text-align: center;
-    gap: 10px;
+    gap: 11px;
     margin-bottom: 10px;
     border-radius: 15px;
     padding: 2px 0px;
     overflow: hidden;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Poppins";
     color: rgb(255, 255, 255);
+    box-shadow: #1c1b2a 0px 2px 0px;
     
 }
 .porforlio-wrapper .porforlio-container .porforlio-items .work-title{
-    font-weight: bolder;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-family: "poppins",
+    
 }
 .porforlio-wrapper .porforlio-container .porforlio-items img{
     border-radius: 10px;
@@ -356,6 +358,7 @@ list-style: none;
 .porforlio-wrapper .porforlio-container .porforlio-items p{
     justify-content: center;
     display: flex;
+    font-family: "Inter";
     
 }
 .porforlio-wrapper .porforlio-container .porforlio-items button{
@@ -608,6 +611,7 @@ margin: 0;
  .text-m{
   font-size: 18px;
   font-weight: 500;
+  line-height: 27px;
  }
  .job-post{
     font-size: 18px;
@@ -648,6 +652,7 @@ margin: 0;
 .wrapper-container .about .profile-control .text-wrapper .inner-text{
     font-size: 14px;
     line-height: 25px;
+  
     
 }
 .wrapper-container .about .profile-control .profile-img{
@@ -703,7 +708,7 @@ margin: 0;
     border-radius: 5px;
     border: solid 1px rgba(157, 0, 205, 0.879);
     padding: 2px;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 /* experience */
