@@ -693,7 +693,7 @@ margin: 0;
  }
  #open-nav-bar{
     position: relative;
-    left: 73%;
+    left: 74%;
     z-index: 1000;
     top: 80px;
     display: block;
@@ -702,13 +702,13 @@ margin: 0;
  }
  #close-nav-bar{
     position: relative;
-    right: -50%;
+    right: -80%;
     display: block;
  }
 
 .no-scroll{
     overflow: hidden;
-    height: 100vh;
+    height: 80vh;
 }
 .nav-bar .nav-items{
     display: flex;
