@@ -59,13 +59,13 @@ const nav_items = document.querySelector(".nav-bar .nav-items");
 
 close_nav.addEventListener("click", () => {
   nav_items.classList.remove("open-nav");
-  document.body.classList.remove("non-scrol");
+  document.body.classList.remove("no-scroll");
 });
+
 open_nav.addEventListener("click", () => {
   nav_items.classList.add("open-nav");
-  document.body.classList.remove("non-scrol");
 
-  document.body.classList.add("non-scrol");
+  document.body.classList.add("no-scroll");
 });
 
 // nav click to transform down
