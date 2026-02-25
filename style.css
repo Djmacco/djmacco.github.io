@@ -1,25 +1,18 @@
 :root{
-   background-image: linear-gradient(90deg, rgb(12, 10, 35),rgb(0, 0, 0));
-    font-family: inherit;
-    scroll-behavior: smooth;
+   background-color: #120e3b;
+    width: auto;
+    overflow-x: hidden;
 }
 
+
+
 .nav-bar .nav-items{
-    /* background-color: azure; */
-    display: flex;
-    padding: 0px  0px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     z-index: 9;
     top: 0;
-   background-image: linear-gradient(90deg, rgb(18, 16, 49),rgb(0, 0, 0));
+  
     height: auto;
-}
-
-.nav-bar .nav-items{
-     
+      background-image: linear-gradient(90deg, rgb(18, 16, 49),rgb(0, 0, 0));
     color: #ffffff;
     justify-content: end;
     display: flex;
@@ -693,7 +686,7 @@ margin: 0;
  }
  #open-nav-bar{
     position: relative;
-    left: 74%;
+    left: 87%;
     z-index: 1000;
     top: 80px;
     display: block;
