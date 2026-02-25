@@ -64,7 +64,6 @@ close_nav.addEventListener("click", () => {
 
 open_nav.addEventListener("click", () => {
   nav_items.classList.add("open-nav");
-
   document.body.classList.add("no-scroll");
 });
 
