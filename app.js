@@ -51,10 +51,26 @@ const handel_send_click = () => {
   }, 4000);
 };
 
-// HANDLE NAV LINK
+// HANDLE NAV LINK for smaller screens
 
-const scrollDownARR = document.querySelector(".arrow-down");
-scrollDownARR.addEventListener("click", () => {});
+const close_nav = document.getElementById("close-nav-bar");
+const open_nav = document.getElementById("open-nav-bar");
+const nav_items = document.querySelector(".nav-bar .nav-items");
+
+close_nav.addEventListener("click", () => {
+  nav_items.classList.remove("open-nav");
+});
+open_nav.addEventListener("click", () => {
+  nav_items.classList.add("open-nav");
+
+  if (nav_items.classList.contains("open-nav")) {
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "100vh";
+  } else {
+    document.body.style.overflow = "auto";
+    document.body.style.height = "auto";
+  }
+});
 
 // nav click to transform down
 const nav_icons = document.querySelectorAll(".nav-bar .nav-items a img");
