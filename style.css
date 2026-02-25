@@ -696,6 +696,7 @@ margin: 0;
  #close-nav-bar{
     position: relative;
     right: -80%;
+    top: 3px;
     display: block;
  }
 
