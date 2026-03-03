@@ -1,6 +1,7 @@
 :root{
-   background-color: #120e3b;
+   background-color: #000000;
     width: auto;
+    margin: 0;
     overflow-x: hidden;
 }
 
@@ -12,7 +13,7 @@
     top: 0;
   
     height: auto;
-      background-image: linear-gradient(90deg, rgb(18, 16, 49),rgb(0, 0, 0));
+    background-image: linear-gradient(90deg, rgb(18, 16, 49),rgb(0, 0, 0));
     color: #ffffff;
     justify-content: end;
     display: flex;
@@ -27,6 +28,7 @@
 }
 .nav-bar .nav-items a{
     color: inherit;
+     letter-spacing: 1.8x;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 550;
@@ -39,7 +41,7 @@
     overflow: hidden;
     height: auto;
     margin-bottom: 0px;
-    background-image: linear-gradient(90deg, rgb(18, 16, 49),rgb(0, 0, 0));
+    background-image: linear-gradient(90deg, rgb(19, 17, 45),rgb(3, 5, 17));
     padding: 10px 5px;
 }
 .wrapper-container   .home-wrapper{
@@ -66,17 +68,18 @@
 }
 
 .text-motive{
-    padding: 0 5px;
+    padding: 5px;
     text-align: center;
     margin-top: 60px;
    
 }
 .text-m{
     font-size: 40px;
-     background:linear-gradient(to right, rgb(255, 255, 255),rgb(108, 10, 154)) ;
+     background:linear-gradient(to right, rgb(185, 54, 183),rgb(0, 157, 214)) ;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    line-height: 40px;
+    line-height: 45px;
+    letter-spacing: 1.3px;
     text-align: center;
     width: 100%;
     font-weight: 500;
@@ -109,13 +112,14 @@
     background:linear-gradient(to right, rgb(217, 0, 255),rgb(124, 68, 234)) ;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     
 }
 .home{
     font-size: 1.6rem;
+     letter-spacing: 1.3px;
     line-height: 30px;
-    font-family: "Poppins";
+    font-family: "inter";
      background:linear-gradient(to right, rgb(243, 115, 2),rgb(168, 1, 246)) ;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -139,8 +143,8 @@
     font-size: 16px;
     color: #e5e4e4;
     transition: .5s;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
     
 }
 
@@ -176,7 +180,9 @@
 }
 .about .about-us-h3{
       padding-left: 6%;
-      color: white;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: rgb(0, 183, 249);
       font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .wrapper-container .about .profile-control .profile-name{
@@ -259,45 +265,72 @@
 
 .experience-wrapper{
     font-family: "poppins";
-    color: rgb(255, 254, 254);
+    color: #eefbff;
+}
+.experience-wrapper .experience-h{
+    color:  rgb(0, 183, 249) ;
+     padding-left: 6%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1.3px;
 }
 
 .experience-wrapper .experience{
    
-    padding: 4px 10px;
+    padding: 4px 2px;
     display: grid;
     border-radius: 10px;
     grid-template-columns: repeat(3,1fr);
-    gap: 5px;
-    font-family: "Inter",
+    gap: 8px;
+    font-family: "poppins",
 
 }
 .experience-wrapper .experience .education-wrapper{
-    background-image: linear-gradient(rgba(18, 6, 21, 0.235),rgb(2, 0, 3));
+    background-image: linear-gradient(rgba(18, 6, 21, 0.235),rgb(3, 1, 30));
     border-radius: 8px;
-    padding: 0 20px;
+    padding: 0 10px;
+    box-shadow: 3px 3px 3px #01091e;
 }
 .experience-wrapper .experience .skills-wrapper{
-    background-image: linear-gradient(rgb(42, 7, 71),rgb(0, 0, 0));
+    background-image: linear-gradient(rgba(18, 6, 21, 0.235),rgb(3, 1, 30));
     border-radius: 8px;
+    box-shadow: 3px 3px 3px #01091e;
     padding: 0 20px;
 }
-
+.experience-wrapper .experience .skills-wrapper .skills{
+     grid-template-columns: repeat(2,1fr);
+     gap: 10px;
+     text-align: start;
+     display: grid;
+     margin: 0;
+   
+}
 :where(.experience-wrapper .experience .skills-wrapper li,.experience-wrapper .experience .education-wrapper li){
     list-style: none;
     color: rgb(254, 254, 254);
     font-size: 16px;
+    margin: 0;
 }
+:where(.experience-wrapper .experience .skills-wrapper h4,.experience-wrapper .experience .education-wrapper h4,.experience-wrapper .experience .internship-wrapper h4){
+    color:  rgb(0, 183, 249);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 700;
+    margin-bottom: 4px;
+}
+
+
 .internship-wrapper{
-   background-image: linear-gradient(rgb(42, 7, 71),rgb(16, 14, 14));
+   background-image: linear-gradient(rgba(18, 6, 21, 0.235),rgb(3, 1, 30));
     border-radius: 8px;
     padding: 0 20px;
+    box-shadow: 3px 3px 3px #01091e;
     
 
 }
 .internship-wrapper .internship{
   
-    line-height: 24px;
+    line-height: 20px;
 }
 .internship-wrapper .internship ul li{
 list-style: none;
@@ -307,10 +340,17 @@ list-style: none;
     font-family: "poppins";
     padding: 10px 5px;
     border-radius: 10px;
-    color: #fff;
+    color: #f4f7fc;
 }
 
-
+.porforlio-wrapper .porforlio-h{
+    color:  rgb(0, 183, 249) ;
+    letter-spacing: 1.3px;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 6%;
+    font-weight: bold;
+}
 .porforlio-wrapper .porforlio-container{
     border-radius: 10px;
     padding: 5px 5px;
@@ -330,24 +370,24 @@ list-style: none;
     padding: 2px 0px;
     overflow: hidden;
     font-family: "Poppins";
-    color: rgb(255, 255, 255);
+    color: rgb(230, 231, 231);
+    letter-spacing: .55px;
     box-shadow: #1c1b2a 0px 2px 0px;
     
 }
 .porforlio-wrapper .porforlio-container .porforlio-items .work-title{
-    font-weight: 800;
-    font-family: "poppins",
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(42, 165, 210);
     
 }
 .porforlio-wrapper .porforlio-container .porforlio-items img{
     border-radius: 10px;
     height: 180px;
-    width: 95%;
-    outline: none;
+    width: 100%;
     object-fit: cover;
     margin: 0 0 0 0;
     outline: none;
-    border: none;
     border-radius: 10px;
 
 }
@@ -366,7 +406,7 @@ list-style: none;
     font-size: 12px;
     margin-bottom: 5px;
     margin-right: 4px;
-    color: #df01d1;
+    color: #7e0275;
 }
 /* contact Us */
 .contact-wrapper{
@@ -381,13 +421,17 @@ list-style: none;
     justify-self: center;
 }
 .contact-wrapper .contact .contact-h{
- color: rgb(255, 255, 255);
+ color: rgb(0, 183, 249);
  font-family: Georgia, 'Times New Roman', Times, serif;
+ font-size: 1.5rem;
+ letter-spacing: 1.2px;
+    padding: 6%;
+    font-weight: bold;
 }
 .cantact-h-i{
     position: relative;
     right: 10vh;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "poppins",Georgia, 'Times New Roman', Times, serif;
 }
 .contact-wrapper .contact-info{
     color:white;
@@ -401,7 +445,7 @@ list-style: none;
    
 }
  .contact-form img{
-    background-color: #fefefe;
+    background-color: #e2f3fd;
     padding: 7px;
     border-radius: 10%;
     margin: 0 4px;
@@ -575,7 +619,6 @@ border-radius: 50%;
  }
 .nav-bar .nav-items a:hover{
     opacity: 0.9;
-    border-bottom: 2px rgba(98, 72, 247, 0.879) solid;
     padding: 0 0 3px 0;
     color: #a5059b;
 }
@@ -606,7 +649,9 @@ margin: 0;
  .text-m{
   font-size: 18px;
   font-weight: 500;
+   letter-spacing: 1.2px;
   line-height: 27px;
+  margin-top: 70px;
  }
  .job-post{
     font-size: 18px;
@@ -651,15 +696,18 @@ margin: 0;
     
 }
 .wrapper-container .about .profile-control .profile-img{
-    width: 250px;
-    height: 250px;
+    width: 210px;
+    height: 210px;
+    background-color: #5e05be;
     border-radius: 50%;
-    box-shadow: #1f1717 3px 3px 3px;
+    box-shadow: #26123c 5px 5px 5px, -3px -3px 5px rgb(8, 4, 26);
     
 }
 .wrapper-container .about .profile-control .profile-img .my-profile-img{
-   
+   background-color: #ffffff;
    width: 200px;
+   padding: 5px;
+   border-radius: 50%;
    height: 200px;
 }
 /* nav bar */
@@ -669,30 +717,33 @@ margin: 0;
     justify-content: center;
     width: 99%;
     height: 7vh;
+    z-index: 999;
     background-color: hsla(248, 100%, 8%, 0.827);
     margin: 0;
+    position: fixed;
     padding: 0;
+    top: 0;
     margin-right: 2px;
     
 }  
  .open-nav{
-    left: 230px;
+    left: 0;
     position: relative;
     transition: .8s ease-in-out;
  }
  #open-nav-bar{
     position: relative;
-    left: 77%;
+    left: 90%;
     z-index: 1001;
-    top: 80px;
+    top: 20px;
     display: block;
     position: fixed;
      
  }
  #close-nav-bar{
     position: relative;
-    right: -50%;
-    top: 10px;
+    right: -30%;
+    bottom: 30%;
     display: block;
  }
 
@@ -702,23 +753,23 @@ margin: 0;
 }
 .nav-bar .nav-items{
     display: flex;
-    margin-top: 0;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 40%;
+    width: 100%;
     top: 0;
-    justify-content: start;
-    text-align: start;
-    right: -80%;
+    text-align: center;
+    right: -110%;
     transition: .8s;
     z-index: 1001;
     position: fixed;
+   
     padding: 30px 3px 2px 25px;
     gap: 15px;
     height: 100vh;
-    font-weight: 500;
     margin-bottom: 0;
-    align-items: start;
     bottom: 0;
+    
 
     
 }
@@ -730,10 +781,10 @@ margin: 0;
 .nav-link{
     color: #dedede;
     border-radius: 5px;
-    
-    padding: 2px;
-    text-align: start;
-    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 6px;
+    font-size: 18px;
+    background-color: #0b0329;
 }
 
 /* experience */
@@ -776,7 +827,6 @@ margin: 0;
 }
 .contact-form .contact-info{
 
-    
     display: flex;
     height: 7vh;
     justify-content: space-between;
