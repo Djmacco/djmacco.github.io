@@ -733,7 +733,7 @@ margin: 0;
  }
  #open-nav-bar{
     position: relative;
-    left: 90%;
+    left: 80%;
     z-index: 1001;
     top: 20px;
     display: block;
