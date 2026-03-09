@@ -57,10 +57,11 @@ const close_nav = document.getElementById("close-nav-bar");
 const open_nav = document.getElementById("open-nav-bar");
 const nav_items = document.querySelector(".nav-bar .nav-items");
 
-close_nav.addEventListener("click", () => {
+const closeSideBar = () => {
   nav_items.classList.remove("open-nav");
   document.body.classList.remove("no-scroll");
-});
+};
+close_nav.addEventListener("click", closeSideBar);
 
 open_nav.addEventListener("click", () => {
   nav_items.classList.add("open-nav");
@@ -86,7 +87,7 @@ window.addEventListener("scroll", () => {
 
   nav_link.forEach((link) => {
     link.classList.remove("active");
-
+    closeSideBar();
     if (link.getAttribute("href") === "#" + current) {
       link.classList.add("active");
     }

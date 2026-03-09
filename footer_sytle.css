@@ -80,7 +80,7 @@ a{
     margin: 2px;
 }
 
-.icon-footer{
+/* .icon-footer{
     background-color: #8b8c8b;
     padding: 5px;
     height: 10px;
@@ -90,6 +90,26 @@ a{
     margin-bottom: -5px;
     margin-top: 5px;
     cursor: pointer;
+} */
+
+.contact-items div a{
+    border: solid 1px #273058;
+    padding: 3px;
+    height: 20px;
+    margin-bottom: 2px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px #212021;
+        
+}
+
+.contact-items div a svg:hover{
+    fill: rgb(122, 126, 237);
+    transform: translateY(-2px);
+
 }
 
 @media (max-width: 600px){
