@@ -1,3 +1,21 @@
+// Animate skill bars when they scroll into view
+const skillFills = document.querySelectorAll(".skill-fill");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        el.style.width = el.dataset.width + "%";
+        observer.unobserve(el);
+      }
+    });
+  },
+  { threshold: 0.3 },
+);
+
+skillFills.forEach((fill) => observer.observe(fill));
+
 let input_message = document.getElementById("message"),
   input_subject = document.querySelector(".input-subject"),
   input_email = document.querySelector(".input-email"),
