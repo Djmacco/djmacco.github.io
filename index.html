@@ -3,27 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    <title>Mac Vette — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    /> -->
-    <link rel="stylesheet" href="footer_sytle.css" />
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer_style.css" />
   </head>
   <body>
+    <!-- nav -->
     <nav class="nav-bar">
       <p class="T-dreams">Tech-dreams</p>
+
       <svg
-        display="none"
         id="open-nav-bar"
         xmlns="http://www.w3.org/2000/svg"
-        width="22"
-        height="22"
+        width="24"
+        height="24"
         fill="#ffffff"
-        class="bi bi-list"
         viewBox="0 0 18 18"
       >
         <path
@@ -31,96 +31,84 @@
           d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
         />
       </svg>
+
       <div class="nav-items">
         <svg
           id="close-nav-bar"
-          display="none"
           xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="18"
+          width="22"
+          height="22"
           fill="currentColor"
-          class="bi bi-x"
           viewBox="0 0 16 16"
         >
           <path
             d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
           />
         </svg>
-        <a class="nav-link" href="#home">home </a>
-
-        <a class="nav-link" href="#about">about</a>
-
-        <a class="nav-link" href="#experience">experience</a>
-
-        <a class="nav-link" href="#porforlio">portfolio </a>
-
-        <a class="nav-link" href="#contact">contact </a>
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </div>
     </nav>
+
     <main class="wrapper-container">
+      <!-- home -->
       <section class="home-wrapper" id="home">
         <div class="home-items">
-          <div class="home">
-            <div class="text-motive">
-              <p class="text-m">
-                Building scalable, responsive & interactive web experiences
-              </p>
-              <p class="text-m2">
-                I design and develop mobile-friendly websites, AI-powered
-                chatbots, and intelligent software <br />
-                solutions leveraging machine learning and deep learning to
-                deliver fast, professional results.
-              </p>
-            </div>
-            <div class="job-post">
-              I'm a Software Engineer <br />
-              Machine learning expert<br />
-              Full-stack developer
-            </div>
+          <div class="text-motive">
+            <p class="text-m">
+              Building scalable, responsive &amp; interactive web experiences
+            </p>
+            <p class="text-m2">
+              I design and develop mobile-friendly websites, AI-powered
+              chatbots, and intelligent software solutions — leveraging machine
+              learning and deep learning to deliver fast, professional results.
+            </p>
           </div>
+
+          <div class="job-post">I'm a Software Engineer</div>
 
           <div class="icons">
             <a
-              href="https://www.linkedin.com/in/mac-vette-binde-a082aa2a6?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              href="https://www.linkedin.com/in/mac-vette-binde-a082aa2a6"
+              aria-label="LinkedIn"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 fill="#fff"
-                class="bi bi-linkedin"
                 viewBox="0 0 16 16"
               >
                 <path
                   d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
                 />
               </svg>
-
-              <!-- <img src="/linkedin.svg" alt="" /> -->
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61559424610962">
+            <a
+              href="https://www.facebook.com/profile.php?id=61559424610962"
+              aria-label="Facebook"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
+                width="16"
+                height="16"
                 fill="#fff"
-                class="bi bi-facebook"
                 viewBox="0 0 16 16"
               >
                 <path
                   d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
                 />
               </svg>
-              <!-- <img src="/facebook.svg" alt="" /> -->
             </a>
-
-            <a href="https://x.com/techdreams200">
+            <a href="https://x.com/techdreams200" aria-label="X / Twitter">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
                 fill="#fff"
-                class="bi bi-twitter-x"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -128,15 +116,12 @@
                 />
               </svg>
             </a>
-
-            <a href="https://github.com/djmacco">
-              <!-- <img src="/github.svg" alt="" /> -->
+            <a href="https://github.com/djmacco" aria-label="GitHub">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
+                width="16"
+                height="16"
                 fill="#fff"
-                class="bi bi-github"
                 viewBox="0 0 16 16"
               >
                 <path
@@ -145,43 +130,48 @@
               </svg>
             </a>
           </div>
+
           <div class="hire-me">
             <a href="#contact">
-              <button onclick="showTextBox()">hire me</button>
+              <button onclick="showTextBox()">Hire me</button>
             </a>
-
             <a href="#contact">
               <img
                 class="arrow-down"
                 src="/arrow-down-circle.svg"
-                alt=""
-              />scroll down
+                alt="scroll down"
+              />
+              Scroll down
             </a>
           </div>
         </div>
       </section>
 
+      <!-- about -->
       <section class="about" id="about">
-        <h3 class="about-us-h3">About Us</h3>
+        <h3 class="about-us-h3">About Me</h3>
         <div class="profile-control">
           <div class="text-wrapper">
             <p class="inner-text">
-              <span> I'm BINDE MAC - VETTE</span> <br />
-              <br />
-              I'm a professionate software enegineer with 2+ years of experience
-              specilizing full stack developer and skills in machine learning. i
-              have strong foundation in programming such as java, python,
-              javascript, and Frameworks technologies. programming is all about
-              problems solving I enjoy solving problems and providing solutions
-              to overcome the problem through coding. Am passionate for
-              development works and always come up with good ideas, ready to
-              learn and ready to work with team mates. My gold or greatest
-              achievement will be to build a robust reputation in the world of
+              <span>I'm BINDE MAC-VETTE</span><br /><br />
+              I'm a professional software engineer with 2+ years of experience,
+              specializing in full-stack development with strong skills in
+              machine learning. I have a solid foundation in languages such as
+              Java, Python, and JavaScript, as well as in various frameworks and
+              technologies. Programming is all about problem-solving — I enjoy
+              finding solutions and overcoming challenges through code. I'm
+              passionate about development, always coming up with new ideas,
+              ready to learn, and eager to collaborate with teammates. My
+              greatest goal is to build a strong reputation in the world of
               technology.
             </p>
           </div>
           <div class="profile-img">
-            <img class="my-profile-img" src="/my_profile_pic.png" alt="" />
+            <img
+              class="my-profile-img"
+              src="/my_profile_pic.png"
+              alt="Mac Vette Binde"
+            />
           </div>
         </div>
         <div class="handle-btn-cv">
@@ -190,30 +180,36 @@
             download
           >
             <button class="dowload-cv">
-              <img class="dw-btn" src="/download.svg" alt="" />download-cv
+              <img class="dw-btn" src="/download.svg" alt="" /> Download CV
             </button>
           </a>
         </div>
       </section>
+
       <!-- experience -->
       <section class="experience-wrapper" id="experience">
         <h3 class="experience-h">Experience</h3>
         <div class="experience">
           <span class="education-wrapper">
             <h4>Education</h4>
-            <p>my academic certificates which I've obtained</p>
+            <p
+              style="
+                color: var(--text-muted);
+                font-size: 0.85rem;
+                margin-bottom: 12px;
+              "
+            >
+              Academic certificates obtained
+            </p>
             <ul>
               <li>GCE Ordinary Level</li>
-              <br />
-              <li>Adanvance Level GCE</li>
-              <br />
-              <li>HND in software Engineering</li>
-              <br />
-              <li>Bachelor degree in computer science (BCS)</li>
-              <br />
-              <li>looking forward to obtain my masters degree in AI/ML.</li>
+              <li>GCE Advanced Level</li>
+              <li>HND in Software Engineering</li>
+              <li>Bachelor's Degree in Computer Science (BCS)</li>
+              <li>Looking forward to a Master's degree in AI/ML</li>
             </ul>
           </span>
+
           <span class="skills-wrapper">
             <h4>Skills</h4>
             <div class="skills">
@@ -311,7 +307,7 @@
               </div>
 
               <div class="skill-category">
-                <p class="skill-cat-title">Frameworks & Libraries</p>
+                <p class="skill-cat-title">Frameworks &amp; Libraries</p>
                 <div class="skill-bar-group">
                   <div class="skill-item">
                     <div class="skill-label">
@@ -341,230 +337,218 @@
               </div>
             </div>
           </span>
-          <!-- <span class="skills-wrapper">
-            <h4>Skills</h4>
-            <div class="skills">
-              <div class="front-end">
-                Frontend
-                <ul>
-                  <li>Javascript</li>
-                  <li>boostrap</li>
-                  <li>tailwind and Css</li>
-                  <li>Html</li>
-                  <li>React</li>
-                </ul>
-              </div>
-              <div>
-                Backend
-                <ul>
-                  <li>Javascript(node.js)</li>
-                  <li>Python</li>
-                  <li>Java</li>
-                </ul>
-              </div>
-              <div class="front-end">
-                Database
-                <ul>
-                  <li>MYSQL/MYSQLITE</li>
-                  <li>MONGODB</li>
-                </ul>
-              </div>
-              <div class="front-end">
-                Frame works, libraries and Rest API
-                <ul>
-                  <li>Flask</li>
-                  <li>pytorch</li>
-                  <li>express</li>
-                </ul>
-              </div>
-            </div>
-          </span> -->
+
           <span class="internship-wrapper">
             <h4 class="internship-h">Internship</h4>
-
             <div class="internship">
-              <p>ISSTMADD Enterprise</p>
+              <p
+                style="
+                  color: var(--cyan);
+                  font-weight: 600;
+                  margin-bottom: 10px;
+                "
+              >
+                ISSTMADD Enterprise
+              </p>
               <ul>
                 <li>
-                  During my intership at ISSTMADD I worked in the software
-                  developement department
+                  Worked in the software development department during my
+                  internship at ISSTMADD.
                 </li>
                 <li>
-                  we were able to develop a chatbot for the institution to
-                  assist student's admission and school updates
+                  Developed an AI chatbot for the institution to assist students
+                  with admission and school updates.
                 </li>
                 <li>
-                  Technologies used to develop the chatbot <br />
-                  Fronend: <br />
-                  boostrap, Javascript, HTML5 and CSS3 <br />
-                  Backend: <br />
-                  python, flask, SqlAlchemy and Pytorch <br />
-
-                  Gemini API for unknown queries.
+                  Technologies used:<br />
+                  <strong>Frontend:</strong> Bootstrap, JavaScript, HTML5,
+                  CSS3<br />
+                  <strong>Backend:</strong> Python, Flask, SQLAlchemy,
+                  PyTorch<br />
+                  <strong>AI:</strong> Gemini API for unknown queries
                 </li>
               </ul>
             </div>
           </span>
         </div>
       </section>
-      <!-- porforlio -->
-      <section class="porforlio-wrapper" id="porforlio">
-        <h3 class="porforlio-h">portfolio</h3>
+
+      <!-- portfolio -->
+      <section class="porforlio-wrapper" id="portfolio">
+        <h3 class="porforlio-h">Portfolio</h3>
         <div class="porforlio-container">
           <div class="porforlio-items">
-            <img src="/todolist2.jpg" alt="" />
-            <p class="work-title">To do list</p>
+            <img src="/todolist2.jpg" alt="To-do list app" />
+            <p class="work-title">To-Do List</p>
             <p>CRUD Application</p>
             <p>
-              A system that allows user to add item, update items, delete items,
-              store items on the local storage and in a Database.
+              Allows users to add, update, and delete items — stored in local
+              storage and a database.
             </p>
-            <button>javascript</button><button>HTML5</button
-            ><button>CSS3</button> <button>flask</button><button>python</button
-            ><button>MYSQLITE</button>
+            <div class="btn-row">
+              <button>JavaScript</button><button>HTML5</button
+              ><button>CSS3</button> <button>Flask</button
+              ><button>Python</button><button>SQLite</button>
+            </div>
           </div>
+
           <div class="porforlio-items">
-            <img src="/quiz-app.jpg" alt="" />
-            <p class="work-title">Quiz app</p>
+            <img src="/quiz-app.jpg" alt="Quiz app" />
+            <p class="work-title">Quiz App</p>
             <p>
-              A system that test developers with programming questions with time
-              limit for each question, add score for each correct question, show
-              correct and wrong answers at the end of the quiz.
+              Tests developers with programming questions, a countdown timer,
+              score tracking, and answer review at the end.
             </p>
-            <button>javascript</button><button>HTML5</button
-            ><button>CSS3</button>
+            <div class="btn-row">
+              <button>JavaScript</button><button>HTML5</button
+              ><button>CSS3</button>
+            </div>
           </div>
+
           <div class="porforlio-items">
-            <img src="/dmomac.jpg" alt="" />
-            <p class="work-title">E-commerce web application</p>
+            <img src="/dmomac.jpg" alt="E-commerce web application" />
+            <p class="work-title">E-Commerce Web App</p>
             <p>
-              A responsive system that has an Admin dashdoard, admin can add,
-              view, update, delete pruducts. <br />
-              on the client site, clients can view products, add products to
-              shopping cart and remove items, search products and fitter
-              products by category.
+              Admin dashboard to manage products. Clients can browse, search,
+              filter by category, and manage their shopping cart.
             </p>
-            <button>javascript</button><button>HTML5</button
-            ><button>CSS3</button> <button>flak</button
-            ><button>SqlAlchemy</button><button>python</button>
+            <div class="btn-row">
+              <button>JavaScript</button><button>HTML5</button
+              ><button>CSS3</button> <button>Flask</button
+              ><button>SQLAlchemy</button><button>Python</button>
+            </div>
           </div>
+
           <div class="porforlio-items">
-            <img src="/best-front-chatbot-web.jpg" alt="" />
-            <p class="work-title">Gemini chatbot</p>
+            <img src="/best-front-chatbot-web.jpg" alt="Gemini chatbot" />
+            <p class="work-title">Gemini Chatbot</p>
             <p>
-              A Chatbot that users can ask questions through the user interface
-              and Gemini Api generate a response and send to the user
+              A chatbot interface where users ask questions and the Gemini API
+              generates and returns responses.
             </p>
-            <button>javascript</button><button>HTML5</button
-            ><button>CSS3</button>
+            <div class="btn-row">
+              <button>JavaScript</button><button>HTML5</button
+              ><button>CSS3</button>
+            </div>
           </div>
+
           <div class="porforlio-items">
-            <img src="/UXI_chatbot.jpg" alt="" />
-            <p class="work-title">Smart campus AI</p>
+            <img src="/light mood chatbot isstmadd.jpg" alt="Smart Campus AI" />
+            <p class="work-title">Smart Campus AI</p>
             <p>
-              Answer FAQs, voice implimentation, understand french and english.
-              Assist students on admission, fees, courses, timetable and school
-              updates <br />
+              Answers FAQs with voice support, understands French and English.
+              Assists students with admission, fees, courses, timetables, and
+              school updates.
             </p>
-            <button>python</button><button>Pytorch</button>
-            <button>javascript</button> <button>SqlAlchemy</button>
-            <button>flask</button> <button>HTML5</button><button>CSS3</button>
-            <button>boostrap</button>
+            <div class="btn-row">
+              <button>Python</button><button>PyTorch</button
+              ><button>JavaScript</button> <button>SQLAlchemy</button
+              ><button>Flask</button><button>HTML5</button> <button>CSS3</button
+              ><button>Bootstrap</button>
+            </div>
           </div>
+
           <div class="porforlio-items">
-            <img src="/data protection.jpg" alt="" />
+            <img src="/data protection.jpg" alt="User authentication system" />
             <p class="work-title">User Authentication</p>
             <p>
-              A system that registers/login users and protect users credentials
-              in a database and harshing credentials to ensure users data are
-              highly protected against hackers
+              Registers and logs in users with hashed credentials stored
+              securely in a database to protect against unauthorized access.
             </p>
-            <button>SqlAlchemy</button> <button>python</button>
-            <button>flask</button> <button>HTML5</button><button>CSS3</button>
+            <div class="btn-row">
+              <button>SQLAlchemy</button><button>Python</button>
+              <button>Flask</button><button>HTML5</button><button>CSS3</button>
+            </div>
           </div>
-          <div class="porforlio-items">
-            <img src="/desktop_portfolio.jpg" alt="" />
-            <p class="work-title">portfolio website</p>
-            <p>Responsive porfolio website on all devices,</p>
-            <p>with scroll animations, email sending and smooth navigation</p>
-            <button>javascript</button> <button>CSS</button>
-            <button>HTML5</button> <button>reveal</button>
-          </div>
-          <div class="porforlio-items">
-            <img src="/e-sheos.jpg" alt="" />
-            <p class="work-title">E-commerce website</p>
-            <p>Responsive E-commerce website. <br />Ongoing project</p>
-            <p>A system where users can sell and buy product</p>
-            <p>
-              An admin can also sell and settle disputes between buyers and
-              sellers
-            </p>
 
-            <button>javascript</button> <button>tailwild</button>
-            <button>React</button> <button>boostrap</button>
-            <button>Node.js</button> <button>MongoDB</button>
-            <button>futterwave</button> <button>Express.js</button>
+          <div class="porforlio-items">
+            <img src="/desktop_portfolio.jpg" alt="Portfolio website" />
+            <p class="work-title">Portfolio Website</p>
+            <p>
+              Responsive portfolio for all devices, featuring scroll animations,
+              email integration, and smooth navigation.
+            </p>
+            <div class="btn-row">
+              <button>JavaScript</button><button>CSS3</button>
+              <button>HTML5</button><button>ScrollReveal</button>
+            </div>
+          </div>
+
+          <div class="porforlio-items">
+            <img src="/e-sheos.jpg" alt="E-commerce marketplace" />
+            <p class="work-title">E-Commerce Marketplace</p>
+            <p>
+              Responsive platform where users can buy and sell products. Admins
+              manage listings and resolve disputes between buyers and sellers.
+              (Ongoing)
+            </p>
+            <div class="btn-row">
+              <button>JavaScript</button><button>Tailwind</button
+              ><button>React</button> <button>Bootstrap</button
+              ><button>Node.js</button><button>MongoDB</button>
+              <button>Flutterwave</button><button>Express.js</button>
+            </div>
           </div>
         </div>
       </section>
+
+      <!-- contact -->
       <section class="contact-wrapper" id="contact">
         <div class="contact">
-          <h3 class="contact-h">Get in touch</h3>
-          <p class="cantact-h-i">
-            Do you have a project? please contact me here
-          </p>
+          <h3 class="contact-h">Get in Touch</h3>
+          <p class="cantact-h-i">Have a project in mind? Contact me here.</p>
         </div>
         <div class="contact-form">
           <div class="contact-info">
-            <p class="tel">Call us</p>
+            <p class="tel">Call me</p>
             <span class="call-c">
               <img class="telephone" src="/telephone.svg" alt="" />
               <b>+237 653 02 64 56</b>
             </span>
-
-            <p class="tel">Message us on</p>
+            <p class="tel">Message me on</p>
             <div class="mess-icon">
-              <a href="https://wa.me/237653026456">
-                <img src="whatsapp.svg" alt="" />
+              <a href="https://wa.me/237653026456" aria-label="WhatsApp">
+                <img src="whatsapp.svg" alt="WhatsApp" />
               </a>
-
-              <a href="https://t.me/techdream200">
-                <img src="telegram.svg" alt="" />
+              <a href="https://t.me/techdream200" aria-label="Telegram">
+                <img src="telegram.svg" alt="Telegram" />
               </a>
             </div>
           </div>
+
           <div class="contact-input">
-            <p class="tel">Contact us by email</p>
+            <p class="tel">Send me an email</p>
             <input
-              type="text"
+              type="email"
               class="input-email"
-              placeholder="email"
+              placeholder="Your email"
               name="email"
             />
             <input
-              class="input-name"
               type="text"
-              placeholder="name"
+              class="input-name"
+              placeholder="Your name"
               name="name"
             />
             <input
-              class="input-subject"
               type="text"
-              placeholder="subject"
+              class="input-subject"
+              placeholder="Subject"
               name="subject"
             />
             <textarea
               id="message"
               name="message"
-              type="text"
               placeholder="Tell me about your project or opportunity..."
             ></textarea>
-            <img class="send-email" src="/send.svg" alt="" />
+            <img class="send-email" src="/send.svg" alt="Send" />
             <span class="email-sent"></span>
           </div>
         </div>
       </section>
     </main>
+
+    <!-- footer -->
     <footer>
       <div class="footer-container">
         <div class="wrapper-contact">
@@ -572,132 +556,106 @@
             <p class="title">Socials</p>
             <div class="contact-items">
               <div>
-                <!-- <a href="https://x.com/techdreams200">
-                  <img class="icon-footer" src="twitter-x.svg" alt="" />twitter
-                </a> -->
                 <a href="https://x.com/techdreams200">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="12"
+                    width="14"
+                    height="14"
                     fill="#fff"
-                    class="bi bi-twitter-x"
                     viewBox="0 0 16 16"
                   >
                     <path
                       d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
                     />
                   </svg>
+                  Twitter / X
                 </a>
               </div>
               <div>
-                <!-- <a href="https://github.com/Djmacco">
-                  <img class="icon-footer" src="github.svg" alt=""
-                /></a>
-                Github -->
                 <a href="https://github.com/djmacco">
-                  <!-- <img src="/github.svg" alt="" /> -->
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="16"
+                    width="14"
                     height="14"
                     fill="#fff"
-                    class="bi bi-github"
                     viewBox="0 0 16 16"
                   >
                     <path
                       d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
                     />
                   </svg>
+                  GitHub
                 </a>
               </div>
               <div>
-                <!-- <a
-                  href="https://www.linkedin.com/in/mac-vette-binde-a082aa2a6?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                  ><img class="icon-footer" src="linkedin.svg" alt="" /> </a
-                >LinkedIn -->
-                <a
-                  href="https://www.linkedin.com/in/mac-vette-binde-a082aa2a6?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                >
+                <a href="https://www.linkedin.com/in/mac-vette-binde-a082aa2a6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="16"
+                    width="14"
                     height="14"
                     fill="#fff"
-                    class="bi bi-linkedin"
                     viewBox="0 0 16 16"
                   >
                     <path
                       d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
                     />
                   </svg>
+                  LinkedIn
                 </a>
               </div>
               <div>
-                <a
-                  href="https://www.tiktok.com/@techdreams1?_r=1&_t=ZN-949myiBUGVK"
-                >
+                <a href="https://www.tiktok.com/@techdreams1">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
+                    width="14"
+                    height="14"
                     fill="currentColor"
-                    class="bi bi-tiktok"
                     viewBox="0 0 16 16"
                   >
                     <path
                       d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
                     />
                   </svg>
+                  TikTok
                 </a>
               </div>
             </div>
           </span>
-          <span
-            ><p class="title">about me</p>
+
+          <span>
+            <p class="title">About Me</p>
             <div class="about-items">
-              <div>software engineer</div>
-              <div>machine learning expert</div>
-              <div>fronend and backend developer</div>
-              <div><a href="#porforlio">projects</a></div>
+              <div>Software Engineer</div>
+              <div>Machine Learning Expert</div>
+              <div>Frontend &amp; Backend Developer</div>
+              <div><a href="#portfolio">Projects</a></div>
             </div>
           </span>
-          <span
-            ><p class="title">feedBack</p>
+
+          <span>
+            <p class="title">Feedback</p>
             <div class="feedback-items">
-              <div>like</div>
-              <div><a href="#message">comment</a></div>
-              <div>share</div>
+              <div>Like</div>
+              <div><a href="#message">Comment</a></div>
+              <div>Share</div>
             </div>
           </span>
         </div>
+
         <div class="reserve-right">
-          <p>© Copyright. 2025 all rights reserved</p>
+          <p>&copy; 2025 Mac Vette Binde — All rights reserved</p>
         </div>
       </div>
     </footer>
   </body>
-  <!-- scroll -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <!-- typed.js -->
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <!-- main js file -->
-  <script src="app.js" defer></script>
 
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-  ></script>
-  <script type="text/javascript">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="app.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
     (function () {
-      emailjs.init({
-        publicKey: "MggbZOxEzWbRvrSyH",
-      });
-    });
+      emailjs.init({ publicKey: "MggbZOxEzWbRvrSyH" });
+    })();
   </script>
-  <!-- <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"
-  ></script> -->
 </html>

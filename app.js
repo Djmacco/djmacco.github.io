@@ -1,13 +1,12 @@
-// Animate skill bars when they scroll into view
+// skill bars — animate on scroll
 const skillFills = document.querySelectorAll(".skill-fill");
 
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        const el = entry.target;
-        el.style.width = el.dataset.width + "%";
-        observer.unobserve(el);
+        entry.target.style.width = entry.target.dataset.width + "%";
+        observer.unobserve(entry.target);
       }
     });
   },
@@ -16,61 +15,50 @@ const observer = new IntersectionObserver(
 
 skillFills.forEach((fill) => observer.observe(fill));
 
-let input_message = document.getElementById("message"),
-  input_subject = document.querySelector(".input-subject"),
-  input_email = document.querySelector(".input-email"),
-  click_send = document.querySelector(".send-email"),
-  input_name = document.querySelector(".input-name");
+// contact form elements
+const input_message = document.getElementById("message");
+const input_subject = document.querySelector(".input-subject");
+const input_email = document.querySelector(".input-email");
+const click_send = document.querySelector(".send-email");
+const input_name = document.querySelector(".input-name");
 
-class Handle_send_email {
-  constructor(email, subject, text_message, name) {
-    this.email = email;
-    this.subject = subject;
-    this.text_message = text_message;
-    this.name = name;
-  }
-}
-
-//
+// fill message when hire-me is clicked
 const showTextBox = () => {
-  input_message.value = "you are hired";
+  if (input_message) input_message.value = "You are hired!";
 };
 
+// send email via emailjs
 const handel_send_click = () => {
-  const email = input_email.value;
-  const subject = input_subject.value;
-  const send_text = input_message.value;
-  const name = input_name.value;
+  const email = input_email.value.trim();
+  const subject = input_subject.value.trim();
+  const msg = input_message.value.trim();
+  const name = input_name.value.trim();
 
-  console.log(name);
-  if (email === "" || subject === "" || send_text === "" || name === "") {
-    alert("please fill all the fields");
+  if (!email || !subject || !msg || !name) {
+    alert("Please fill in all fields.");
     return;
   }
+
+  emailjs.send("service_7h3xpxs", "template_hr0r00k", {
+    email,
+    subject,
+    message: msg,
+    name,
+  });
 
   input_message.value = "";
   input_email.value = "";
   input_subject.value = "";
   input_name.value = "";
 
-  const myinfo = new Handle_send_email(email, subject, send_text, name);
-  const data = {
-    email: myinfo.email,
-    subject: myinfo.subject,
-    message: myinfo.text_message,
-    name: myinfo.name,
-  };
-
-  emailjs.send("service_7h3xpxs", "template_hr0r00k", data);
-
-  document.querySelector(".email-sent").innerHTML = "message sent succefully";
-  setTimeout(() => {
-    document.querySelector(".email-sent").innerHTML = "";
-  }, 4000);
+  const sent = document.querySelector(".email-sent");
+  sent.textContent = "Message sent successfully!";
+  setTimeout(() => (sent.textContent = ""), 4000);
 };
 
-// HANDLE NAV LINK for smaller screens
+if (click_send) click_send.addEventListener("click", handel_send_click);
 
+// mobile nav
 const close_nav = document.getElementById("close-nav-bar");
 const open_nav = document.getElementById("open-nav-bar");
 const nav_items = document.querySelector(".nav-bar .nav-items");
@@ -79,31 +67,29 @@ const closeSideBar = () => {
   nav_items.classList.remove("open-nav");
   document.body.classList.remove("no-scroll");
 };
-close_nav.addEventListener("click", closeSideBar);
 
-open_nav.addEventListener("click", () => {
-  nav_items.classList.add("open-nav");
-  document.body.classList.add("no-scroll");
-});
+if (close_nav) close_nav.addEventListener("click", closeSideBar);
 
-// nav click to transform down
-const nav_icons = document.querySelectorAll(".nav-bar .nav-items a img");
+if (open_nav) {
+  open_nav.addEventListener("click", () => {
+    nav_items.classList.add("open-nav");
+    document.body.classList.add("no-scroll");
+  });
+}
 
+// active nav link on scroll
 const sections = document.querySelectorAll("section");
-const nav_link = document.querySelectorAll(".nav-link");
+const nav_links = document.querySelectorAll(".nav-link");
 
 window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.clientHeight;
-
-    if (scrollY >= sectionTop - 200) {
+    if (scrollY >= section.offsetTop - 200) {
       current = section.getAttribute("id");
     }
   });
 
-  nav_link.forEach((link) => {
+  nav_links.forEach((link) => {
     link.classList.remove("active");
     closeSideBar();
     if (link.getAttribute("href") === "#" + current) {
@@ -112,67 +98,50 @@ window.addEventListener("scroll", () => {
   });
 });
 
-click_send.addEventListener("click", handel_send_click);
-// contact form
-const contactForm = document.querySelector(".contact-form");
-const text_m = document.querySelector(".text-m");
-
+// scroll reveal
 const sr = ScrollReveal({
   origin: "bottom",
-  distance: "80px",
-  duration: 2000,
+  distance: "60px",
+  duration: 1800,
   reset: true,
 });
-/* -- HOME -- */
-sr.reveal(".about-items", {});
-sr.reveal(".", { delay: 100 });
-sr.reveal(".profile-name", { delay: 200 });
 
-/* -- PROJECT BOX -- */
-sr.reveal(".about", { interval: 200 });
-/* -- HEADINGS -- */
 sr.reveal(".home-wrapper", {});
-
-sr.reveal(".porforlio-items", { delay: 100 });
+sr.reveal(".about", { interval: 200 });
+sr.reveal(".about-items", {});
 sr.reveal(".text-m", { delay: 200 });
+sr.reveal(".porforlio-items", { delay: 100, interval: 80 });
 sr.reveal(".education-wrapper", { delay: 100 });
-// skills and internship
-
 sr.reveal(".skills-wrapper", { delay: 100 });
 sr.reveal(".internship-wrapper", { delay: 100 });
 
-// typing effect
-var typingEffect = new Typed(".job-post", {
+const srLeft = ScrollReveal({
+  origin: "left",
+  distance: "60px",
+  duration: 1800,
+  reset: true,
+});
+const srRight = ScrollReveal({
+  origin: "right",
+  distance: "60px",
+  duration: 1800,
+  reset: true,
+});
+
+srLeft.reveal(".contact-info", { delay: 100 });
+srLeft.reveal(".contact-items", { delay: 100 });
+srRight.reveal(".contact-input", { delay: 100 });
+srRight.reveal(".feedback-items", { delay: 100 });
+
+// typed.js effect
+new Typed(".job-post", {
   strings: [
     "I'm a Software Engineer",
     "I'm an Expert in Machine Learning",
-    "I'm  a Full-stack Developer",
+    "I'm a Full-Stack Developer",
   ],
   loop: true,
   typeSpeed: 100,
   backSpeed: 80,
   backDelay: 2000,
 });
-
-/* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
-/* -- ABOUT INFO & CONTACT INFO -- */
-const srLeft = ScrollReveal({
-  origin: "left",
-  distance: "80px",
-  duration: 2000,
-  reset: true,
-});
-
-srLeft.reveal(".contact-info", { delay: 100 });
-srLeft.reveal(".contact-items", { delay: 100 });
-
-/* -- A & FORM BOX -- */
-const srRight = ScrollReveal({
-  origin: "right",
-  distance: "80px",
-  duration: 2000,
-  reset: true,
-});
-
-srRight.reveal(".contact-input", { delay: 100 });
-srRight.reveal(".feedback-items", { delay: 100 });
