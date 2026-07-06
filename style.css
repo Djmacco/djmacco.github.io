@@ -736,6 +736,7 @@ footer {
   }
   .logo{
     left: 5px;
+    width: 100px;
   }
   #open-nav-bar {
     display: block;
