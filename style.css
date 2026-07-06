@@ -729,21 +729,25 @@ footer {
 /* mobile */
 @media (max-width: 600px) {
   /* nav */
-  .nav-bar { padding: 0 16px; }
+  .nav-bar { padding: 2 10px; }
   .T-dreams{
     position: relative;
-    left: -20px;
+    left: -40px;
+    top: 10px;
   }
   .logo{
-    left: 5px;
-    width: 100px;
+    position: relative;
+    left: 30px;
+    top: 10px;
+    width: 130px;
+    border-radius: 5px;
   }
   #open-nav-bar {
     display: block;
     position: fixed;
     right: 16px;
     top: 18px;
-    z-index: 1001;
+    z-index: 1000;
   }
 
   .nav-items {
@@ -765,7 +769,11 @@ footer {
 
   #close-nav-bar {
     display: block;
+
     position: absolute;
+    width: 30px;
+    background-color: #0d0e1a;
+    height: 30px;
     top: 20px; right: 20px;
     color: var(--text-primary);
   }
