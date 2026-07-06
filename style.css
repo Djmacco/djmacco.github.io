@@ -11,7 +11,7 @@
   --text-primary: #eef0ff;
   --text-muted:   #9899b8;
   --border:       rgba(108, 99, 255, 0.22);
-  --nav-h:        60px;
+  --nav-h:        65px;
 }
 
 /* reset */
@@ -32,7 +32,7 @@ body {
 /* ── nav ── */
 .nav-bar {
   position: fixed;
-  top: 0; left: 0;
+  top: 0; left: -20px;
   width: 100%;
   z-index: 999;
   display: flex;
@@ -47,8 +47,8 @@ body {
 
 .T-dreams {
   font-family: Impact, 'Arial Narrow Bold', sans-serif;
-  font-size: 1.25rem;
-  background: linear-gradient(to right, #d400ff, #7c44ea);
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #4d09ed, #940efa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 1px;
