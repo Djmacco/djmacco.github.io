@@ -730,7 +730,13 @@ footer {
 @media (max-width: 600px) {
   /* nav */
   .nav-bar { padding: 0 16px; }
-
+  .T-dreams{
+    position: relative;
+    left: -20px;
+  }
+  .logo{
+    left: 5px;
+  }
   #open-nav-bar {
     display: block;
     position: fixed;
