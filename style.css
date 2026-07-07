@@ -739,10 +739,10 @@ footer {
   .nav-bar { padding: 2 10px; }
   .T-dreams{
     position: relative;
-    left: -80px;
+    left: -30px;
     top: 5px;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   background: linear-gradient(to right, #4d09ed, #940efa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -759,7 +759,7 @@ footer {
   #open-nav-bar {
     display: block;
     position: fixed;
-    right: 60px;
+    right: 30px;
     top: 18px;
     z-index: 1000;
   }
