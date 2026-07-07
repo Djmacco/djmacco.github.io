@@ -709,6 +709,13 @@ footer {
 
 /* tablet */
 @media (max-width: 900px) {
+   .logo{
+    position: relative;
+    left: 50px;
+    top: 3px;
+    width: 120px;
+    border-radius: 5px;
+  }
   .experience .skills {
     grid-template-columns: 1fr;
   }
@@ -732,20 +739,27 @@ footer {
   .nav-bar { padding: 2 10px; }
   .T-dreams{
     position: relative;
-    left: -40px;
-    top: 10px;
+    left: -80px;
+    top: 5px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.6rem;
+  background: linear-gradient(to right, #4d09ed, #940efa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.6px;
+  flex-shrink: 0;
   }
   .logo{
     position: relative;
-    left: 30px;
-    top: 10px;
-    width: 130px;
+    left: 5px;
+    top: 3px;
+    width: 120px;
     border-radius: 5px;
   }
   #open-nav-bar {
     display: block;
     position: fixed;
-    right: 16px;
+    right: 60px;
     top: 18px;
     z-index: 1000;
   }
