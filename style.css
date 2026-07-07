@@ -739,8 +739,8 @@ footer {
   .nav-bar { padding: 2 10px; }
   .T-dreams{
     position: relative;
-    left: -30px;
-    top: 5px;
+    left: -40px;
+    top: 10px;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
   font-size: 1.2rem;
   background: linear-gradient(to right, #4d09ed, #940efa);
